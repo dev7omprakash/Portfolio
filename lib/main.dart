@@ -18,7 +18,7 @@ class MyApp extends StatelessWidget {
       title: "Portfolio",
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
-        primaryColor: Colors.blue[700],
+        primaryColor: Colors.indigo[600],
         backgroundColor: Colors.white,
       ),
       home: MyHomePage(),
