@@ -1,5 +1,4 @@
 import 'dart:ui';
-
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
@@ -15,7 +14,10 @@ class _MyHomePageState extends State<MyHomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Portfolio"),
+        title: Text(
+          "Profile",
+          style: TextStyle(fontSize: 22, letterSpacing: 3),
+        ),
       ),
       body: Container(
         width: double.infinity,
@@ -24,9 +26,12 @@ class _MyHomePageState extends State<MyHomePage> {
           children: [
             Container(
               padding: EdgeInsets.all(6),
-              decoration: BoxDecoration(
-                color: Colors.blue[300],
-              ),
+              decoration: BoxDecoration(color: Colors.blue[300], boxShadow: [
+                BoxShadow(
+                  color: Colors.grey,
+                  blurRadius: 8.0,
+                ),
+              ]),
               width: double.infinity,
               height: 195,
               child: Column(
@@ -222,27 +227,44 @@ class _MyHomePageState extends State<MyHomePage> {
         child: ListView(
           children: [
             UserAccountsDrawerHeader(
-                accountName: Text("Om Prakash"),
-                accountEmail: Text("omprakash72810@gmail.com"),
+                accountName: Text("Om Prakash",
+                    style: TextStyle(
+                      fontSize: 17,
+                      letterSpacing: 2,
+                    )),
+                accountEmail: Text("omprakash72810@gmail.com",
+                    style: TextStyle(
+                      fontSize: 15,
+                      letterSpacing: 1,
+                    )),
                 currentAccountPicture: CircleAvatar(
-                    backgroundColor: Colors.blue, child: Text("O P"))),
+                    backgroundColor: Colors.blue,
+                    child: Text("O P",
+                        style: TextStyle(
+                          fontWeight: FontWeight.bold,
+                          fontSize: 23,
+                        )))),
             ListTile(
-              title: Text("Technology"),
+              title: Text("Technology", style: TextStyle(fontSize: 17)),
               trailing: Icon(Icons.code),
               onTap: () => Navigator.of(context).pushNamed("/Tech"),
             ),
             ListTile(
-              title: Text("AboutMe"),
+              title: Text("AboutMe", style: TextStyle(fontSize: 17)),
               trailing: Icon(Icons.person_add),
               onTap: () => Navigator.of(context).pushNamed("/AboutMe"),
             ),
             ListTile(
-              title: Text("Contact"),
+              title: Text("Contact", style: TextStyle(fontSize: 17)),
               trailing: Icon(Icons.contact_page),
               onTap: () => Navigator.of(context).pushNamed("/Contact"),
             ),
             ListTile(
-              title: Text("Cancel"),
+                title: Text(" Feedback", style: TextStyle(fontSize: 17)),
+                trailing: Icon(Icons.feedback),
+                onTap: () => Navigator.of(context).pushNamed("/Feedback")),
+            ListTile(
+              title: Text("Cancel", style: TextStyle(fontSize: 17)),
               trailing: Icon(Icons.cancel),
               onTap: () => Navigator.of(context).pop(),
             ),

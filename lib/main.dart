@@ -3,6 +3,7 @@ import 'MyHomePage.dart';
 import 'AboutMe.dart';
 import 'Tech.dart';
 import 'Contact.dart';
+import 'FeedBack.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 void main() {
@@ -23,9 +24,12 @@ class MyApp extends StatelessWidget {
       ),
       home: MyHomePage(),
       routes: <String, WidgetBuilder>{
-        "/AboutMe": (context) => AboutMe(),
+        "/AboutMe": (context) => AboutMe(
+              name: '',
+            ),
         "/Tech": (context) => Tech(),
         "/Contact": (context) => Contact(),
+        "/Feedback": (context) => FeedBack(),
       },
     );
   }

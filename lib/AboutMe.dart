@@ -1,22 +1,14 @@
 import 'package:flutter/material.dart';
 
-class AboutMe extends StatefulWidget {
-  const AboutMe({Key? key}) : super(key: key);
+class AboutMe extends StatelessWidget {
+  final String name;
+  const AboutMe({Key? key, required this.name}) : super(key: key);
 
-  @override
-  _AboutMeState createState() => _AboutMeState();
-}
-
-class _AboutMeState extends State<AboutMe> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text("About Me"),
-      ),
-      body: Center(
-        child: Text("About Me"),
-      ),
+      appBar: AppBar(title: Text("About Me")),
+      body: Center(child: Text(name)),
     );
   }
 }
