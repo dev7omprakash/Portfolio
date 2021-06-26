@@ -50,6 +50,16 @@ flutter:
     - Images/Avtar.png
     - Images/profile.png
     - Images/feedback.png
+    - Images/dart.png
+    - Images/ando.png
+    - Images/java.png
+    - Images/git.png
+    - Images/github.png
+    - Images/flutter.png
+    - Images/mongodb.png
+    - Images/firebase.png
+    - Images/vs.png
+    - Images/win.png
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.

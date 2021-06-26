@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'AboutMe.dart';
 
 class FeedBack extends StatefulWidget {
   const FeedBack({Key? key}) : super(key: key);
@@ -16,9 +15,12 @@ class _FeedBackState extends State<FeedBack> {
     if (_key.currentState!.validate()) {
       _key.currentState!.save();
       Navigator.push(context, MaterialPageRoute(builder: (context) {
-        return AboutMe(
-          name: name,
-        );
+        return Scaffold();
+
+        //set the path where you enat so send data
+        // return AboutMe(
+        //   name: name,
+        // );
       }));
     }
   }
@@ -39,7 +41,7 @@ class _FeedBackState extends State<FeedBack> {
                 Padding(padding: EdgeInsets.all(10)),
                 Image(
                   width: 500,
-                  height: 300,
+                  height: 270,
                   image: AssetImage("Images/feedback.png"),
                 ),
                 ListTile(
@@ -97,7 +99,8 @@ class _FeedBackState extends State<FeedBack> {
                       color: Colors.blueGrey,
                       child: Text("Send Feedback"),
                       onPressed: _send,
-                    ))
+                    )),
+                Padding(padding: EdgeInsets.all(10)),
               ],
             ),
           ),

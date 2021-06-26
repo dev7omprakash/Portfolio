@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 import 'MyHomePage.dart';
-import 'AboutMe.dart';
 import 'Tech.dart';
+import 'Projects.dart';
+
 import 'Contact.dart';
 import 'FeedBack.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -24,9 +25,7 @@ class MyApp extends StatelessWidget {
       ),
       home: MyHomePage(),
       routes: <String, WidgetBuilder>{
-        "/AboutMe": (context) => AboutMe(
-              name: '',
-            ),
+        "/Projects": (context) => Projects(),
         "/Tech": (context) => Tech(),
         "/Contact": (context) => Contact(),
         "/Feedback": (context) => FeedBack(),
