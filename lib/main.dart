@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'MyHomePage.dart';
 import 'Tech.dart';
 import 'Projects.dart';
-
+import 'News.dart';
 import 'Contact.dart';
 import 'FeedBack.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -29,6 +29,7 @@ class MyApp extends StatelessWidget {
         "/Tech": (context) => Tech(),
         "/Contact": (context) => Contact(),
         "/Feedback": (context) => FeedBack(),
+        "/News": (context) => News(),
       },
     );
   }

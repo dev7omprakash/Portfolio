@@ -57,9 +57,13 @@ class _MyHomePageState extends State<MyHomePage> {
               onTap: () => Navigator.of(context).pushNamed("/Contact"),
             ),
             ListTile(
-                title: Text(" Feedback", style: TextStyle(fontSize: 17)),
+                title: Text("Feedback", style: TextStyle(fontSize: 17)),
                 trailing: Icon(Icons.feedback),
                 onTap: () => Navigator.of(context).pushNamed("/Feedback")),
+            ListTile(
+                title: Text("Tech News", style: TextStyle(fontSize: 17)),
+                trailing: Icon(Icons.live_tv),
+                onTap: () => Navigator.of(context).pushNamed("/News")),
             ListTile(
               title: Text("Cancel", style: TextStyle(fontSize: 17)),
               trailing: Icon(Icons.cancel),
